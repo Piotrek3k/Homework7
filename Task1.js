@@ -26,7 +26,7 @@ const promises = [
     Promise.reject(3)
   ];
 
-  console.log(promises[0].state)
+
   
 promiseAll(promises).then(results => {console.log("All promises resolved:", results); // Expected: [1, 2, 3]
     })
