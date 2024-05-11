@@ -28,46 +28,10 @@ const promises = [
 
   console.log(promises[0].state)
   
-//   promiseAll(promises)
-//     .then(results => {
-//       console.log("All promises resolved:", results); // Expected: [1, 2, 3]
-//     })
-//     .catch(error => {
-//       console.error("At least one promise rejected:", error);
-//     });
-
 promiseAll(promises).then(results => {console.log("All promises resolved:", results); // Expected: [1, 2, 3]
     })
     .catch(error => {
       console.error("At least one promise rejected:", error);
     });
 
-// console.log(Promise.reject(5))
 
-// const promiseAll = async (promises) => {
-//     const results = [];
-//     try {
-//         for (const promise of promises) {
-//             const result = await promise;
-//             results.push(result);
-//         }
-//         return results;
-//     } catch (error) {
-//         console.error("At least one promise rejected:", error);
-//         throw error; // Propagate the rejection
-//     }
-// };
-
-// const promises = [
-//     Promise.resolve(1),
-//     Promise.reject(2),
-//     Promise.resolve(3)
-// ];
-
-// promiseAll(promises)
-//     .then(results => {
-//         console.log("All promises resolved:", results); // Expected: [1, 2, 3]
-//     })
-//     .catch(error => {
-//         console.error("At least one promise rejected:", error);
-//     });
